@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vigor1980 — 中国企业出海美国 · 市场落地全案服务</title>
+<meta name="description" content="Vigor1980 为中国企业提供美国市场落地全案服务，涵盖商标注册、公司设立、市场运营、活动策划、商业咨询及软件开发。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:60px}
+body{font-family:'Noto Sans SC',system-ui,-apple-system,sans-serif;background:#fff;color:#333;line-height:1.8;font-size:15px}
+
+/* === NAV === */
+.nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.97);backdrop-filter:blur(8px);border-bottom:1px solid #e5e5e5;padding:0 24px}
+.nav-inner{max-width:800px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;height:48px}
+.nav-logo{font-weight:900;font-size:.9rem;color:#1B4F72;letter-spacing:.5px}
+.nav-links{display:flex;gap:20px}
+.nav-links a{color:#666;text-decoration:none;font-size:.78rem;font-weight:500;transition:color .2s;white-space:nowrap}
+.nav-links a:hover{color:#1B4F72}
+
+/* === MAIN === */
+.main{max-width:800px;margin:0 auto;padding:32px 24px 80px}
+
+/* === TITLE === */
+.title-block{margin-bottom:40px;padding-bottom:14px;border-bottom:2px solid #1B4F72}
+.title-block h1{font-size:1.7rem;font-weight:900;color:#333;line-height:1.35}
+.title-block h1 em{font-style:normal;color:#1B4F72}
+.title-block .sub{font-size:.88rem;color:#999;font-style:italic;margin-top:4px}
+.intro{color:#333;margin-bottom:8px}
+
+/* === HEADINGS === */
+h2{font-size:1.15rem;font-weight:700;color:#1B4F72;margin:44px 0 8px;padding-bottom:7px;border-bottom:2px solid #1B4F72}
+h3{font-size:.95rem;font-weight:700;color:#1B4F72;margin:28px 0 8px;background:#EBF5FB;padding:7px 14px}
+
+/* === TEXT === */
+p{margin:10px 0}
+.note{color:#666;font-size:.86rem}
+strong{font-weight:700}
+
+/* === TABLES === */
+.table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:14px 0}
+table{width:100%;border-collapse:collapse;min-width:480px}
+th{background:#1B4F72;color:#fff;text-align:left;padding:9px 13px;font-size:.85rem;font-weight:600;white-space:nowrap}
+td{padding:9px 13px;font-size:.86rem;border:1px solid #ccc}
+td:first-child{font-weight:600;background:#EBF5FB}
+.price{color:#1B4F72;font-weight:700;text-align:right;white-space:nowrap}
+
+/* Comparison table */
+.cmp th:nth-child(2){background:#1B4F72}
+.cmp th:nth-child(3){background:#95A5A6}
+.cmp td:nth-child(2){color:#27AE60;font-weight:500}
+.cmp td:nth-child(3){color:#999}
+
+/* === HIGHLIGHT BOX === */
+.highlight{background:#FEF9E7;border:1px solid #ddd;padding:14px 18px;margin:18px 0;font-size:.88rem}
+.highlight strong{color:#1B4F72}
+
+/* === ABOUT === */
+.about-box{background:#EBF5FB;border:1px solid rgba(27,79,114,.12);padding:24px 22px;margin:14px 0}
+.about-name{font-size:1.1rem;font-weight:700;color:#1B4F72}
+.about-name span{font-size:.83rem;color:#666;font-weight:400;display:block;margin-top:2px}
+.about-tags{margin:10px 0;display:flex;flex-wrap:wrap;gap:5px}
+.about-tag{font-size:.7rem;padding:3px 9px;border:1px solid rgba(27,79,114,.18);border-radius:10px;color:#1B4F72;background:#fff}
+.about-text{font-size:.88rem;color:#555;line-height:1.8;margin-top:10px}
+.about-text strong{color:#333}
+.about-text .accent{color:#1B4F72;font-weight:600;margin-top:10px;display:block}
+
+/* === ADVANTAGE GRID === */
+.adv-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:14px 0}
+.adv-item{background:#EBF5FB;border:1px solid rgba(27,79,114,.08);padding:13px 14px}
+.adv-item.full{grid-column:1/-1;text-align:center}
+.adv-item h4{font-size:.86rem;color:#1B4F72;margin-bottom:3px}
+.adv-item p{font-size:.8rem;color:#666;margin:0}
+
+/* === FOOTER === */
+.footer{margin-top:44px;padding-top:18px;border-top:2px solid #1B4F72;text-align:center}
+.footer .name{font-size:.95rem;font-weight:700;color:#1B4F72}
+.footer p{font-size:.8rem;color:#666;margin:2px 0}
+.footer a{color:#1B4F72;text-decoration:none}
+
+/* === MOBILE === */
+@media(max-width:640px){
+  .nav-links{gap:12px}
+  .nav-links a{font-size:.72rem}
+  .main{padding:24px 16px 60px}
+  .title-block h1{font-size:1.4rem}
+  h2{font-size:1.05rem;margin-top:36px}
+  .adv-grid{grid-template-columns:1fr}
+  table{min-width:360px}
+  td,th{padding:7px 10px;font-size:.82rem}
+}
+@media(max-width:400px){
+  .nav-links{gap:8px}
+  .nav-links a{font-size:.68rem}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<div class="nav">
+<div class="nav-inner">
+  <div class="nav-logo">VIGOR1980</div>
+  <div class="nav-links">
+    <a href="#s1">商标注册</a>
+    <a href="#s3">合作方案</a>
+    <a href="#s4">活动策划</a>
+    <a href="#s6">软件开发</a>
+    <a href="#s7">关于我</a>
+    <a href="#price">报价表</a>
+  </div>
+</div>
+</div>
+
+<div class="main">
+
+<!-- TITLE -->
+<div class="title-block">
+  <h1>中国企业出海美国<br><em>市场落地全案服务</em></h1>
+  <div class="sub">U.S. Market Entry — Full-Service Partnership Proposal</div>
+</div>
+
+
+
+<!-- 一 -->
+<h2 id="s1">一、美国商标注册及域名服务</h2>
+<div class="table-wrap"><table>
+  <tr><th>项目</th><th>费用（USD）</th></tr>
+  <tr><td>商标取名 + Logo 设计</td><td class="price">$800</td></tr>
+  <tr><td>美国商标注册（指定类别）工本费</td><td class="price">$350 / 类</td></tr>
+  <tr><td>域名注册首年</td><td class="price">按实际费用</td></tr>
+  <tr><td>代办服务费</td><td class="price">$400</td></tr>
+</table></div>
+<p class="note">备注：域名需每年续费。商标注册周期通常为 8-12 个月，期间即可正常使用。</p>
+
+<!-- 二 -->
+<h2 id="s2">二、美国公司注册</h2>
+<p>公司注册由专业会计团队办理，全程代办，流程专业高效。将建立专项沟通群，确保高效透明推进。</p>
+
+<!-- 三 -->
+<h2 id="s3">三、美国市场运营合作方案</h2>
+<p><strong>根据贵公司实际需求阶段，提供以下两种合作模式：</strong></p>
+
+<h3>方案 A：注册地址 + 代收服务</h3>
+<div class="table-wrap"><table>
+  <tr><th>项目</th><th>说明</th></tr>
+  <tr><td>年费</td><td>$1,000 / 年</td></tr>
+  <tr><td>注册地址</td><td>提供美国商业注册地址，协助完成公司注册</td></tr>
+  <tr><td>信件代收</td><td>代收官方及商业信件，及时转达</td></tr>
+  <tr><td>样品收发</td><td>协助偶尔样品收发及本地转寄</td></tr>
+</table></div>
+<p class="note">适合：初期仅需合规落地、暂不开展大规模本地运营的阶段或电商品牌。</p>
+
+<h3>方案 B：美国区域市场合伙人（推荐）</h3>
+<div class="table-wrap"><table>
+  <tr><th>项目</th><th>说明</th></tr>
+  <tr><td>合作模式</td><td>美国区域市场合伙人（参照行业地方合伙人惯例）</td></tr>
+  <tr><td>股权结构</td><td>总计 20%，按业绩阶段分批释放</td></tr>
+  <tr><td>第一阶段</td><td>完成首批客户签约并产生实际销售收入，释放 5%</td></tr>
+  <tr><td>第二阶段</td><td>年销售额达到约定目标，累计释放至 10%</td></tr>
+  <tr><td>第三阶段</td><td>建立稳定渠道体系并实现持续增长，累计释放至 20%</td></tr>
+  <tr><td>底薪</td><td>起步期 $400/天 - $2,000/月，后续根据工作量及市场行情动态调整</td></tr>
+  <tr><td>业绩提成</td><td>按实际销售额及行业标准约定提成比例</td></tr>
+  <tr><td>退出机制</td><td>未达阶段性业绩目标，未释放部分不予授予</td></tr>
+</table></div>
+
+<p><strong>我将全面负责并交付以下核心价值：</strong></p>
+<div class="table-wrap"><table>
+  <tr><th>职能领域</th><th>具体内容</th></tr>
+  <tr><td>市场策略</td><td>美国市场进入策略制定与持续优化</td></tr>
+  <tr><td>业务落地</td><td>合规、物流、支付、税务等全流程本地化执行</td></tr>
+  <tr><td>客户与渠道</td><td>开发经销商、零售商、工程商、设计师等核心渠道</td></tr>
+  <tr><td>商务拓展</td><td>展会参展、线下商务拓展、行业协会对接</td></tr>
+  <tr><td>团队建设</td><td>招聘本地团队并负责日常管理</td></tr>
+  <tr><td>运营协调</td><td>中美团队日常运营协调、问题实时解决</td></tr>
+</table></div>
+
+<!-- 四 -->
+<h2 id="s4">四、活动策划与运营服务</h2>
+<p><strong>为中国企业参加美国展会及商务活动提供一站式本地执行支持：</strong></p>
+
+<h3>4.1 专业翻译服务</h3>
+<div class="table-wrap"><table>
+  <tr><th>翻译类型</th><th>日费率（USD）</th><th>说明</th></tr>
+  <tr><td>中英双语翻译（本人）</td><td class="price">$500 / 天</td><td>展会现场、商务会议、客户接待全程翻译</td></tr>
+  <tr><td>中英双语翻译（团队）</td><td class="price">$350 - $400 / 天</td><td>经验丰富的专业翻译人员</td></tr>
+  <tr><td>小语种翻译</td><td class="price">$400 / 天</td><td>西 / 法 / 德 / 葡萄牙语等，按需匹配</td></tr>
+</table></div>
+
+<h3>4.2 商业摄影</h3>
+<div class="table-wrap"><table>
+  <tr><th>项目</th><th>费用（USD）</th><th>说明</th></tr>
+  <tr><td>展会 / 商务摄影</td><td class="price">$600 / 4小时</td><td>展台拍摄、产品特写、活动记录</td></tr>
+  <tr><td>超时部分</td><td class="price">按小时另行报价</td><td>根据实际需求灵活延长</td></tr>
+</table></div>
+
+<h3>4.3 展会模特</h3>
+<div class="table-wrap"><table>
+  <tr><th>项目</th><th>费用（USD）</th><th>说明</th></tr>
+  <tr><td>展会模特</td><td class="price">按需求报价</td><td>根据展会规模、天数、形象要求定制方案</td></tr>
+</table></div>
+
+<h3>4.4 商务出行与后勤支持</h3>
+<div class="table-wrap"><table>
+  <tr><th>项目</th><th>费用（USD）</th><th>说明</th></tr>
+  <tr><td>机场接送</td><td class="price">$100 - $150 / 次</td><td>根据距离与车型报价</td></tr>
+  <tr><td>商务包车</td><td class="price">$350 起 / 天</td><td>全天商务用车，司机 + 车辆一站式服务</td></tr>
+  <tr><td>当地临时兼职工</td><td class="price">按需报价</td><td>展台搭建、搬运、派发等临时人力匹配</td></tr>
+</table></div>
+
+<h3>4.5 公司路演与企业家演讲</h3>
+<div class="table-wrap"><table>
+  <tr><th>项目</th><th>费用（USD）</th><th>说明</th></tr>
+  <tr><td>公司路演（本人）</td><td class="price">$2,000 / 场</td><td>面向投资人、合作伙伴的专业路演策划与执行</td></tr>
+  <tr><td>美国当地企业家演讲</td><td class="price">$3,500 - $8,000 / 场</td><td>根据场地规模、受众层级及定制程度报价</td></tr>
+</table></div>
+
+<div class="highlight"><strong>一站式优势：</strong>以上所有活动执行服务由我统一协调、本地把控，免去您跨时区多头对接的麻烦，确保展会与商务活动高效落地。</div>
+
+<!-- 五 -->
+<h2 id="s5">五、企业出海美国商业策划咨询</h2>
+<p>针对中国企业进入美国市场的战略规划需求，提供一对一深度商业策划咨询：</p>
+<div class="table-wrap"><table>
+  <tr><th>项目</th><th>费用（USD）</th><th>说明</th></tr>
+  <tr><td>商业策划咨询</td><td class="price">$60 / 小时</td><td>2 小时起约，涵盖市场分析、竞争策略、渠道规划、定价策略等</td></tr>
+  <tr><td>深度策划专案</td><td class="price">$100 / 小时</td><td>8 小时起约，完整的美国市场进入方案，含书面报告与执行路线图</td></tr>
+</table></div>
+
+<p><strong>咨询范围包括但不限于：</strong></p>
+<div class="table-wrap"><table>
+  <tr><th>咨询领域</th><th>具体内容</th></tr>
+  <tr><td>市场调研</td><td>美国目标市场容量、竞争格局、消费者画像分析</td></tr>
+  <tr><td>品牌定位</td><td>美国市场品牌命名、定位策略、差异化路径</td></tr>
+  <tr><td>渠道策略</td><td>线上（Amazon / 独立站）+ 线下（经销 / 零售 / 工程）全渠道规划</td></tr>
+  <tr><td>合规指导</td><td>产品认证、进口法规、税务架构等合规方向指引</td></tr>
+  <tr><td>定价策略</td><td>基于美国市场竞争环境的定价模型建议</td></tr>
+  <tr><td>展会规划</td><td>目标展会筛选、参展策略、展前展后客户跟进方案</td></tr>
+</table></div>
+
+<!-- 六 -->
+<h2 id="s6">六、软件开发与网站定制服务</h2>
+<p>由专业美国软件工程师团队交付，提供从设计到上线的全流程定制开发：</p>
+<div class="table-wrap"><table>
+  <tr><th>项目</th><th>费用（USD）</th><th>说明</th></tr>
+  <tr><td>网站定制开发</td><td class="price">$1,000 - $6,000</td><td>企业官网、品牌站、电商站等，根据功能复杂度报价</td></tr>
+  <tr><td>App 定制开发</td><td class="price">$2,500 - $15,000</td><td>iOS / Android 应用，价格约为网站定制的 2.5 倍</td></tr>
+  <tr><td>后续维护</td><td class="price">按需报价</td><td>上线后技术支持、迭代更新、服务器维护等</td></tr>
+</table></div>
+<div class="table-wrap"><table>
+  <tr><th>服务优势</th><th>说明</th></tr>
+  <tr><td>美国本土团队</td><td>全美软件工程师开发，代码质量与交付标准对标美国市场</td></tr>
+  <tr><td>中英双语沟通</td><td>中国客户无语言障碍，需求理解零偏差</td></tr>
+  <tr><td>出海适配</td><td>网站 / App 原生适配美国用户习惯、支付、合规要求</td></tr>
+  <tr><td>一站式交付</td><td>UI 设计、前后端开发、测试上线、应用商店发布全包</td></tr>
+</table></div>
+
+<!-- 七 -->
+<h2 id="s7">七、关于我</h2>
+<div class="about-box">
+  <div class="about-name">Lynn Zheng 郑永玲<span>Vigor1980 ｜ 奥兰多，佛罗里达 ｜ 在美 11 年</span></div>
+  <div class="about-tags">
+    <span class="about-tag">阿里巴巴电商卖家</span>
+    <span class="about-tag">服装工厂创始人</span>
+    <span class="about-tag">美国持牌保险经纪人</span>
+    <span class="about-tag">美国持牌房地产经纪人</span>
+    <span class="about-tag">AI 科技公司创始人</span>
+    <span class="about-tag">双语主持人</span>
+  </div>
+  <div class="about-text">
+    <p>在美 11 年。曾为阿里巴巴电商卖家及服装工厂创始人，拥有多年实业经营与创业经验。美国持牌保险与房地产经纪人，<strong>AI 软件开发与科技产品创新公司创始人</strong>。</p>
+    <p style="margin-top:8px">担任<strong>奥兰多创业文化交流论坛双语主持</strong>。组建并运营奥兰多本地多语种综合服务团队，提供翻译、摄影、导游、展会搭建、代参展及企业出海服务（美国公司取名、注册、商标注册、工作签证等），服务多家中美企业。</p>
+    <p style="margin-top:8px">长期从事中美跨境商务与资源对接，擅长<strong>资源整合、跨文化沟通及企业定制化服务</strong>，拥有美国多年展会与商务拓展实战经验。</p>
+    <span class="accent">专注连接中美人才与产业深度合作机会，推动企业海外落地与长期发展。</span>
+  </div>
+</div>
+
+<!-- 八 -->
+<h2 id="s8">八、为什么选择与我合作</h2>
+<p><strong>与从国内外派员工相比，与我合作是更高效、更经济的选择：</strong></p>
+<div class="table-wrap"><table class="cmp">
+  <tr><th>对比维度</th><th>与我合作 ✓</th><th>外派员工</th></tr>
+  <tr><td>Relocation 成本</td><td>零，本地长期居住</td><td>签证、搬迁、安家费用高</td></tr>
+  <tr><td>语言与文化</td><td>中英双语 + 中国制造业&amp;贸易背景 + 美国多年商务经验</td><td>无</td></tr>
+  <tr><td>本地资源</td><td>已有渠道网络与行业人脉</td><td>需从零建立</td></tr>
+  <tr><td>启动速度</td><td>可立即开展工作</td><td>适应期 3-6 个月</td></tr>
+  <tr><td>驻美成本</td><td>企业无需承担</td><td>住房、保险、补贴等</td></tr>
+  <tr><td>客户响应</td><td>24 小时本地响应</td><td>受时差或适应期影响</td></tr>
+  <tr><td>国际化战略素养</td><td>全球视角下的国际化与本地化市场战略执行能力</td><td>无</td></tr>
+</table></div>
+
+<p><strong>我的核心优势总结：</strong></p>
+<div class="adv-grid">
+  <div class="adv-item"><h4>✦ 常驻美国，24小时响应</h4><p>不是远程顾问，本地客户和合作伙伴随时对接</p></div>
+  <div class="adv-item"><h4>✦ 国际化&amp;中美思维高效转换</h4><p>国际化眼光帮企业快速国际化，理解中国总部思维，熟悉美国商业规则</p></div>
+  <div class="adv-item"><h4>✦ 成熟的本地商务网络</h4><p>渠道资源、行业人脉已就位，加速市场渗透</p></div>
+  <div class="adv-item"><h4>✦ 战略规划 + 亲手落地</h4><p>长期活跃在美国房地产、高科技、企业家俱乐部，战略眼光高，执行力强</p></div>
+  <div class="adv-item full"><h4>✦ 贵公司在美国的长期市场代表与形象窗口</h4><p>不是短期外包，而是与您一起开拓美国市场的利益共同体</p></div>
+</div>
+
+<!-- 附录 -->
+<h2 id="price">附录：服务报价速查表</h2>
+<div class="table-wrap"><table>
+  <tr><th>服务类别</th><th>项目</th><th>报价（USD）</th></tr>
+  <tr><td>品牌注册</td><td>商标取名 + Logo 设计</td><td class="price">$800</td></tr>
+  <tr><td>品牌注册</td><td>商标注册工本费</td><td class="price">$350 / 类</td></tr>
+  <tr><td>品牌注册</td><td>代办服务费</td><td class="price">$400</td></tr>
+  <tr><td>地址服务</td><td>注册地址 + 信件代收 + 样品转寄</td><td class="price">$1,000 / 年</td></tr>
+  <tr><td>翻译服务</td><td>中英翻译（本人）</td><td class="price">$500 / 天</td></tr>
+  <tr><td>翻译服务</td><td>中英翻译（团队）</td><td class="price">$350 - $400 / 天</td></tr>
+  <tr><td>翻译服务</td><td>小语种翻译</td><td class="price">$400 / 天</td></tr>
+  <tr><td>摄影服务</td><td>展会 / 商务摄影</td><td class="price">$600 / 4小时</td></tr>
+  <tr><td>模特服务</td><td>展会模特</td><td class="price">按需报价</td></tr>
+  <tr><td>出行后勤</td><td>机场接送</td><td class="price">$100 - $150 / 次</td></tr>
+  <tr><td>出行后勤</td><td>商务包车</td><td class="price">$350 起 / 天</td></tr>
+  <tr><td>出行后勤</td><td>当地临时兼职工</td><td class="price">按需报价</td></tr>
+  <tr><td>路演演讲</td><td>公司路演（本人）</td><td class="price">$2,000 / 场</td></tr>
+  <tr><td>路演演讲</td><td>美国企业家演讲</td><td class="price">$3,500 - $8,000 / 场</td></tr>
+  <tr><td>商业策划</td><td>出海商业策划咨询</td><td class="price">$60 / 小时（2小时起）</td></tr>
+  <tr><td>商业策划</td><td>深度策划专案</td><td class="price">$100 / 小时（8小时起）</td></tr>
+  <tr><td>软件开发</td><td>网站定制开发</td><td class="price">$1,000 - $6,000</td></tr>
+  <tr><td>软件开发</td><td>App 定制开发</td><td class="price">$2,500 - $15,000</td></tr>
+</table></div>
+
+<!-- FOOTER -->
+<div class="footer">
+  <div class="name">Vigor1980</div>
+  <p>Lynn Zheng 郑永玲</p>
+  <p>Orlando, Florida ｜ 可全美出差</p>
+  <p><a href="https://us.vigor1980.com">us.vigor1980.com</a></p>
+</div>
+
+</div><!-- .main -->
+</body>
+</html>
